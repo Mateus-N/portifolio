@@ -31,8 +31,7 @@ aside {
 }
 
 .perfil img:hover {
-  outline: .5px solid rgba(0, 0, 255, 0.5);
-  box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.5);
+  box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.8);
 }
 
 .perfil h1 {
