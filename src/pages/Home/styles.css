@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.home {
+  background-color: #22212C;
+}
+
+.body {
+  margin: auto;
+  padding: 10px;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+  gap: .4rem;
+}
+
+aside {
+  flex-basis: 30%;
+}
+
+main {
+  margin-top: .5rem;
+}

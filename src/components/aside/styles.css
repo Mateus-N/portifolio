@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+aside {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  gap: .8rem;
+  height: 95vh;
+}
+
+.card {
+  background-color: #302F3D;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.4);
+}
+
+.perfil {
+  flex-basis: 30%;
+  padding: 20px;
+  align-items: center;
+}
+
+.perfil img {
+  width: 110px;
+  border-radius: 55px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  transition: all ease 0.2s;
+}
+
+.perfil img:hover {
+  outline: .5px solid rgba(0, 0, 255, 0.5);
+  box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.5);
+}
+
+.perfil h1 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.perfil p {
+  font-size: 14px;
+}
+
+.infos {
+  padding: 20px;
+  height: 100%;
+  justify-content: center;
+}
+
+.infos ul {
+  list-style-type: none;
+}
+
+.infos ul li a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  font-size: 10px;
+  margin-bottom: 16px;
+}
+
+.infos ul li a:hover {
+  opacity: 0.8;
+  transition: all ease 0.2s;
+}
+
+.techs {
+  align-items: center;
+}
+
+.techs table {
+  margin: 12px;
+}
+
+.techs table tr td {
+  padding: 6px 8px;
+  background-color: #CB92B1;
+  text-align: center;
+  border: 3px solid #302F3D;
+  font-size: 10px;
+  color: black;
+  font-weight: 700;
+  border-radius: 20px;
+  transition: all ease 0.2s;
+}

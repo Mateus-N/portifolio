@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.card {
+  background-color: #302F3D;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.4);
+}
+
+.main {
+  padding: 8px;
+}
