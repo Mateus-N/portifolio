@@ -10,7 +10,6 @@
   max-width: 1000px;
   display: flex;
   justify-content: space-evenly;
-  height: 100vh;
   gap: .4rem;
 }
 
@@ -20,4 +19,5 @@ aside {
 
 main {
   margin-top: .5rem;
+  flex: 1;
 }

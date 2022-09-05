@@ -1,35 +1,14 @@
-import React, { useState, useEffect } from "react";
 import './styles.css'
-import Repositories from "../repositories";
+import { getProjeto } from "../../data";
 
 export default () => {
 
-  const [repos, setRepos] = useState([])
-
-  useEffect (() => {
-    fetch (`https://api.github.com/users/Mateus-N/repos`)
-      .then ( response => response.json())
-      .then ( data => {
-        setRepos (data)
-      })
-  }, [])
+  let projeto = getProjeto(1)
 
   return (
-
     <div className="main card">
-      {
-        repos.map ( repo => (
-          <Repositories
-            key={repo.name}
-            userName={repo.owner.login}
-            name={repo.name}
-            description={repo.description}
-            link={repo.html_url}
-          />
-        ))
-      }
+      <h2>{projeto.name}</h2>
+      <img src={projeto.print} alt="Imagem" />
     </div>
-
   )
-
 }
