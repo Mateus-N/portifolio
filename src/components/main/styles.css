@@ -8,6 +8,21 @@
   box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.4);
 }
 
-.main {
+.main--container {
   padding: 8px;
+}
+
+.main--container h1 {
+  padding: 6px;
+}
+
+.main--menu {
+  color: blue;
+  display: flex;
+}
+
+.main--iconMenu {
+  height: 75px;
+  padding: 8px;
+  border-radius: 20px;
 }
