@@ -4,10 +4,17 @@
   background-color: #837E9F;
   padding: 10px;
 }
+
 .project--image {
   width: 100%;
 }
 
 .project--container h2, .project--container p, .project--container a {
   color: black;
+  margin: 8px;
+}
+
+.project--container a {
+  text-decoration: none;
+  font-size: 14px;
 }
