@@ -1,0 +1,13 @@
+.academic__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: var(--cor-cyan-600);
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.academic__card div {
+  max-width: 50%;
+}

@@ -1,0 +1,26 @@
+.jobs__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.jobs {
+  background-color: var(--cor-cyan-600);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.jobs__company {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.jobs__details {
+  margin-left: 24px;
+}
+
+.jobs li {
+  margin-bottom: 8px;
+}
