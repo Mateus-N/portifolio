@@ -2,7 +2,7 @@ export default class MenuStyle {
   private itemAtivo: HTMLLIElement
 
   constructor() {
-    const botaoHome: HTMLButtonElement = document.querySelector('.buttom__home')
+    const botaoHome = document.querySelector('.buttom__home') as HTMLButtonElement
     this.itemAtivo = botaoHome.parentElement as HTMLLIElement
     this.adicionaClasseNovoItem()
   }
