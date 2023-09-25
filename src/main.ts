@@ -9,6 +9,6 @@ const menuItems = new MenuStyle()
 botoesMenu.forEach(botao => {
   botao.addEventListener('click', () => {
     menuItems.alterarItemAtivo(botao)
-    contentGenerator.changeContent(botao.textContent)
+    contentGenerator.changeContent(botao.textContent!)
   })
 })

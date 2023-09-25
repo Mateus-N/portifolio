@@ -27,7 +27,6 @@
   transition: all ease 0.5s;
 }
 
-
 body {
   height: 100vh;
   background-color: var(--fundo);

@@ -14,7 +14,7 @@ export default class Content {
   private profissional: ProfissionalCard[] = profissionalData
 
   constructor() {
-    this.container = document.querySelector('.content')
+    this.container = document.querySelector('.content') as HTMLElement
     this.home()
   }
 
@@ -50,7 +50,7 @@ export default class Content {
     if (newRepos.length > 0) {
       this.adicionaReposAoContainer(newRepos)
     } else {
-      const containerBotaoCarregarMais: HTMLElement = document.querySelector('.carregar-mais')
+      const containerBotaoCarregarMais = document.querySelector('.carregar-mais') as HTMLElement
       containerBotaoCarregarMais.innerHTML = `Não há mais repositórios.`
     }
   }
@@ -62,7 +62,7 @@ export default class Content {
   }
 
   private adicionaReposAoContainer(newRepos: Repositorio[]): void {
-    const projetosContainer: HTMLElement = this.container.querySelector('.projetos')
+    const projetosContainer = this.container.querySelector('.projetos') as HTMLElement
     newRepos.forEach(repo => {
       projetosContainer.innerHTML += `<div class="projetos__card">
         <h2>${repo.name}</h2>
@@ -77,7 +77,7 @@ export default class Content {
         Carregar mais
       </button>
     </div>`
-    const carregarMaisProjetos: HTMLButtonElement = document.querySelector('.carregar-mais')
+    const carregarMaisProjetos = document.querySelector('.carregar-mais') as HTMLButtonElement
     carregarMaisProjetos.addEventListener('click', () => {
       this.carregarMaisProjetos()
     })
@@ -89,7 +89,7 @@ export default class Content {
 
   private academico(): void {
     this.adicionaEstruturaParaAcademico()
-    const academicContainer = this.container.querySelector('.academic')
+    const academicContainer = this.container.querySelector('.academic') as HTMLElement
     this.academic.forEach(acad => {
       academicContainer.innerHTML += `<div class="academic__card">
         <div>
@@ -107,7 +107,7 @@ export default class Content {
 
   private Profissional(): void {
     this.adicionaEstruturaParaProfissional()
-    const jobsContainer = this.container.querySelector('.jobs__container')
+    const jobsContainer = this.container.querySelector('.jobs__container') as HTMLElement
     this.profissional.forEach(job => {
       jobsContainer.innerHTML += `<div class="jobs">
         <div class="jobs__company">
@@ -116,7 +116,7 @@ export default class Content {
         </div>
         <ul class="jobs__details__${job.id}"></ul>
       </div>`
-      const detailsContainer = this.container.querySelector(`.jobs__details__${job.id}`)
+      const detailsContainer = this.container.querySelector(`.jobs__details__${job.id}`) as HTMLElement
       job.detalhes.forEach(detail => {
         detailsContainer.innerHTML += `<li> - ${detail}</li>`
       })
